@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    background-size: cover;
+    color: #000;
+    font-family: Arial;
+    margin-bottom: 100px;
+
+}
+
+input{
+    display: block;
+    height: 30px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 12pt;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000;
+    outline: none;
+
+}
+
+
+
+
+div#corpo-form{
+    width: 90%; /* 90% da largura do contêiner pai */
+    max-width: 360px; /* largura máxima de 420 pixels */
+    margin: 150px auto 0;
+    padding: 20px;
+    border: 8px solid #fff;
+    border-radius: 8px;
+    background-color: #ccc!important;
+}
+
+div#corpo-form-cad{
+    width: 420px;
+    margin: 40px auto 0px auto;
+}
+
+div#corpo-form h1, div#corpo-form h2, div#corpo-form-cad h1{
+    text-align: center;
+    padding: 20px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding-top:10px;
+    padding-bottom: 10px; 
+    margin-bottom: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+a:link {
+ text-decoration: none;
+}
+
+input[type=submit]{
+    background-color: rgb(14, 102, 153);
+    height: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    color: #fff!important;
+    font-weight: bold;
+    
+}
+
+input[type=submit]:hover{
+    background-color: #13b5f1;
+    height: 40px;
+    font-size: 14px;
+    color: #000!important;
+    font-weight: bold;
+    
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: #000 solid 8px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+}
+
+.line_class{
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding-top:10px;
+    padding-bottom: 10px; 
+    margin-bottom: 10px;
+
+}
+
+.buttom_class{
+    background-color: rgb(14, 102, 153);
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff!important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 90%;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    padding-top:10px;
+    padding-bottom: 5px; 
+    margin-bottom: 10px;
+    
+}
+
+.buttom_class:hover{
+    background-color: #13b5f1;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000!important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 90%;
+    margin: 10px;
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    padding-top:10px;
+    padding-bottom: 5px; 
+    margin-bottom: 10px;
+    
+}
+
+.buttom_class a:hover{
+    
+    color: #000!important;
+    
+    
+}
+
+.image_logo{
+    width: 60%;
+    height: auto;
+    max-width: 360px;
+}
+
+.centralize{
+    text-align: center;
+}
+
+div#msg-sucesso{
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(50, 205, 50, .3);
+    border: 1px solid rgb(34, 139, 34);
+
+}
+
+div.msg-erro{
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(250, 128, 114, .3);
+    border: 1px solid rgb(165, 42, 42);
+
+}
+
+#corpo-form{
+    background-color: #000!important;
+}

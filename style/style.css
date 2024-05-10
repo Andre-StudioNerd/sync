@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #000!important;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #000;
+  }
+
+
+
+body{
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    background-size: cover;
+    color: #000!important;
+    font-family: Arial;
+    margin-bottom: 100px;
+
+}
+
+input{
+    display: block;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 10pt;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000!important;
+    outline: none;
+    width: calc(100% - 0px); /* Largura do input - padding */
+    padding: 10px;
+    margin: 0 auto; /* Centraliza o input horizontalmente */
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+label{
+    display: block;
+    margin: 0px;
+    border: none;
+    font-size: 10pt;
+    padding: 10px 10px 10px 0px;
+    color: #000!important;
+    outline: none;
+    width: calc(100% - 20px); /* Largura do input - padding */
+    margin: 0 auto; /* Centraliza o input horizontalmente */
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+select{
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 10pt;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000;
+    outline: none;
+    padding: 10px;
+    margin: 0 auto; /* Centraliza o input horizontalmente */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+select option {
+    /* Define a cor de fundo do dropdown */
+    background-color: #fff;
+    /* Define a cor do texto no dropdown */
+    color: #000;
+    font-size: 14pt;
+  }
+
+textarea {
+    display: block;
+    height: 200px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 10pt;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000!important;
+    outline: none;
+    padding: 10px;
+    margin: 0 auto; /* Centraliza o input horizontalmente */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+div#corpo-form{
+    width: 90%; /* 90% da largura do contêiner pai */
+    max-width: 360px; /* largura máxima de 420 pixels */
+    margin: 150px auto 0;
+    padding: 20px;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    
+}
+
+div#corpo-form-cad{
+    width: 90%; /* 90% da largura do contêiner pai */
+    max-width: 600px; /* largura máxima de 420 pixels */
+    margin: 50px auto 0;
+    padding: 20px;
+    border: 8px solid #fff;
+    border-radius: 8px;
+    background-color: #ccc;
+}
+
+div#corpo-form h1, div#corpo-form h2, div#corpo-form-cad h1{
+    text-align: center;
+    padding: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:link {
+    text-decoration: none;
+   }
+
+input[type=submit]{
+    margin-top: 30px;
+    background-color: rgb(14, 102, 153);
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    color:#fff!important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+input[type=submit]:hover{
+    margin-top: 30px;
+    background-color: #13b5f1;
+    font-size: 12px;
+    color:#fff!important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: #000 solid 8px;
+}
+
+.buttom_cad{
+    background-color: rgb(14, 102, 153);
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff!important;
+    font-weight: bold;
+    margin-top: 10px;;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 10pt;
+    text-align: center;
+    display: block;
+    padding-top:12px;
+    padding-bottom: 0px; 
+    margin-bottom: 0px;
+    
+}
+
+.buttom_cad:hover{
+    background-color: #13b5f1;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000!important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 10pt;
+    text-align: center;
+    display: block;
+    padding-top:12px;
+    padding-bottom: 0px; 
+    margin-bottom: 0px;
+    
+}
+
+.buttom_class a:hover{
+    
+    color: #000!important;
+    
+    
+}
+
+
+div#msg-sucesso{
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(50, 205, 50, .3);
+    border: 1px solid rgb(34, 139, 34);
+
+}
+
+div.msg-erro{
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(250, 128, 114, .3);
+    border: 1px solid rgb(165, 42, 42);
+
+}
+
+.title {
+    background-color: rgb(14, 102, 153);
+    color: #fff;
+   
+}
+
+.custom-file-upload {
+    background-color: rgb(14, 102, 153);;
+    color: white!important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.input-file {
+    display: none!important;
+}
+
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+.exit{
+    color: #000;
+}
+@media only screen and (max-width: 768px) {
+    #cortes {
+        width: 95%;
+    }
+
+    .buttom_class {
+        font-size: 14pt;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #cortes {
+        width: 100%;
+    }
+
+    .buttom_class {
+        font-size: 12pt;
+    }
+}

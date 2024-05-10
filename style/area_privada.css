@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #10688E;
+    color: black;
+    font-family: Arial;
+
+}
+
+div#cortes{
+    margin: 50px auto 50px auto;
+    width: 90%; /* 90% da largura do contêiner pai */
+    max-width: 800px; /* largura máxima de 420 pixels */
+    padding: 20px;
+    border: 8px solid #fff;
+    border-radius: 8px;
+    background-color: #ccc;
+    color:#000;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+   }
+
+.line{
+    margin: 10px;
+    background-color: transparent;
+    padding: 5px;
+    border: solid 3px #000;
+    border-radius: 2px;
+}
+
+.photo{
+    
+    text-align: center;
+    margin: 30px;
+   
+}
+
+.image_sync{
+    width: 50%;
+    height: auto;
+    max-width: 100px!important; 
+    text-align: center;
+}
+
+.centralize{
+    text-align: center!important;
+}
+
+.buttom_class{
+    background-color: rgb(14, 102, 153);
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff!important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 10pt;
+    text-align: center;
+    display: block;
+    padding-top:12px;
+    padding-bottom: 5px; 
+    margin-bottom: 0px;
+    
+}
+
+.buttom_class:hover{
+    background-color: #13b5f1;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff!important;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    font-size: 10pt;
+    text-align: center;
+    display: block;
+    padding-top:12px;
+    padding-bottom: 0px; 
+    margin-bottom: 0px;
+}
+
+.buttom_class a:hover{
+    color: #000!important;
+}
+
+.image_profile{
+    width: 60%;
+    height: auto;
+    max-width: 360px;
+    
+}
+
+.dados-usuario{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title{
+    background-color: rgb(14, 102, 153);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center!important;
+}
+@media only screen and (max-width: 768px) {
+    #cortes {
+        width: 95%;
+    }
+
+    .buttom_class {
+        font-size: 14pt;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #cortes {
+        width: 100%;
+    }
+
+    .buttom_class {
+        font-size: 12pt;
+    }
+}

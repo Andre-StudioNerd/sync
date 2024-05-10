@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirecionar para páginas específicas com base na URL amigável
+RewriteRule ^cadastro$ cadastrar.php [L]
+RewriteRule ^perfil$ areaPrivada.php [L]
+RewriteRule ^cadastro$ cadastrar.php [L]
+RewriteRule ^perfil$ areaPrivada.php [L]
+RewriteRule ^atualiza$ atualizar.php [L]
+RewriteRule ^sair$ sair.php [L]
+# Adicione mais regras conforme necessário
