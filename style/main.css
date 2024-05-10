@@ -1,18 +1,20 @@
+/* Reset de estilos para todos os elementos */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+/* Estilos para o corpo da página */
 body{
     background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
     background-size: cover;
     color: #000;
     font-family: Arial;
     margin-bottom: 100px;
-
 }
 
+/* Inputs */
 input{
     display: block;
     height: 30px;
@@ -25,15 +27,12 @@ input{
     background-color: rgba(255, 255, 255, 0.4);
     color: #000;
     outline: none;
-
 }
 
-
-
-
+/* Div com ID "corpo-form" */
 div#corpo-form{
-    width: 90%; /* 90% da largura do contêiner pai */
-    max-width: 360px; /* largura máxima de 420 pixels */
+    width: 90%;
+    max-width: 360px;
     margin: 150px auto 0;
     padding: 20px;
     border: 8px solid #fff;
@@ -41,33 +40,35 @@ div#corpo-form{
     background-color: #ccc!important;
 }
 
+/* Div com ID "corpo-form-cad" */
 div#corpo-form-cad{
     width: 420px;
     margin: 40px auto 0px auto;
 }
 
+/* Títulos dentro das divs */
 div#corpo-form h1, div#corpo-form h2, div#corpo-form-cad h1{
     text-align: center;
     padding: 20px;
 }
 
+/* Links */
 a{
     color: #fff;
     text-decoration: none;
     text-align: center;
     display: block;
     padding-top:10px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
+/* Links ao passar o mouse */
 a:hover{
     text-decoration: underline;
 }
-a:link {
- text-decoration: none;
-}
 
+/* Inputs do tipo submit */
 input[type=submit]{
     background-color: rgb(14, 102, 153);
     height: 40px;
@@ -76,17 +77,18 @@ input[type=submit]{
     transition: 0.3s;
     color: #fff!important;
     font-weight: bold;
-    
 }
 
+/* Inputs do tipo submit ao passar o mouse */
 input[type=submit]:hover{
     background-color: #13b5f1;
     height: 40px;
     font-size: 14px;
     color: #000!important;
     font-weight: bold;
-    
 }
+
+/* Rodapé */
 footer{
     background-color: #333;
     color: #fff;
@@ -98,30 +100,32 @@ footer{
     border-top: #000 solid 8px;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+/* Placeholders */
+::-webkit-input-placeholder {
     color: #000;
 }
-::-moz-placeholder { /* Firefox 19+ */
+::-moz-placeholder {
     color: #000;
 }
-:-ms-input-placeholder { /* IE 10+ */
+:-ms-input-placeholder {
     color: #000;
 }
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
     color: #000;
 }
 
+/* Classe .line_class */
 .line_class{
     color: #000;
     text-decoration: none;
     text-align: center;
     display: block;
     padding-top:10px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
     margin-bottom: 10px;
-
 }
 
+/* Classe .buttom_class */
 .buttom_class{
     background-color: rgb(14, 102, 153);
     cursor: pointer;
@@ -138,11 +142,11 @@ footer{
     text-align: center;
     display: block;
     padding-top:10px;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
     margin-bottom: 10px;
-    
 }
 
+/* Classe .buttom_class ao passar o mouse */
 .buttom_class:hover{
     background-color: #13b5f1;
     cursor: pointer;
@@ -158,46 +162,46 @@ footer{
     text-align: center;
     display: block;
     padding-top:10px;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
     margin-bottom: 10px;
-    
 }
 
+/* Links dentro da classe .buttom_class ao passar o mouse */
 .buttom_class a:hover{
-    
     color: #000!important;
-    
-    
 }
 
+/* Classe .image_logo */
 .image_logo{
     width: 60%;
     height: auto;
     max-width: 360px;
 }
 
+/* Centralizar */
 .centralize{
     text-align: center;
 }
 
+/* Div com ID "msg-sucesso" */
 div#msg-sucesso{
     width: 400px;
     margin: 10px auto;
     padding: 10px;
     background-color: rgba(50, 205, 50, .3);
     border: 1px solid rgb(34, 139, 34);
-
 }
 
+/* Div com classe .msg-erro */
 div.msg-erro{
     width: 400px;
     margin: 10px auto;
     padding: 10px;
     background-color: rgba(250, 128, 114, .3);
     border: 1px solid rgb(165, 42, 42);
-
 }
 
+/* Estilos para a div com ID "corpo-form" (sobrescrita) */
 #corpo-form{
     background-color: #000!important;
 }

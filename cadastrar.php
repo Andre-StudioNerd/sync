@@ -1,11 +1,17 @@
 <?php
+// Inclui os arquivos necessários
 require_once 'classes/Usuarios.php';
 require_once 'classes/Security.php';
+
+// Instancia a classe Usuarios
 $u = new Usuarios();
 
+// Verifica se o formulário foi submetido
 if(isset($_POST['cadastrar'])) {
+    // Inclui o arquivo de conexão com o banco de dados
     require_once('conexao.php');
 
+    // Obtém os dados do formulário
     $nome = addslashes($_POST['nome']);
     $telefone = addslashes($_POST['telefone']);
     $email = addslashes($_POST['email']);
@@ -23,6 +29,7 @@ if(isset($_POST['cadastrar'])) {
     $imagem_nome = $_FILES['imagem']['name'];
     $imagem_tmp = $_FILES['imagem']['tmp_name'];
 
+    // Verifica se uma imagem foi selecionada
     if (!empty($imagem_nome) && !empty($imagem_tmp)) {
         // Obtém a extensão do arquivo de imagem
         $extensao = pathinfo($imagem_nome, PATHINFO_EXTENSION);
@@ -40,11 +47,16 @@ if(isset($_POST['cadastrar'])) {
         $caminho_imagem = "";
     }
 
+    // Verifica se todos os campos obrigatórios foram preenchidos
     if(!empty($nome) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($conf_senha)) {
+        // Conecta ao banco de dados
         $u->conectar($database_name, $database_host, $database_user, $database_password);
 
+        // Verifica se houve erro na conexão
         if($u->msgERRO == "") {
+            // Verifica se as senhas coincidem
             if($senha == $conf_senha) {
+                // Tenta cadastrar o usuário
                 if($u->cadastrar($nome, $telefone, $email, $senha, $genero, $idade, $endereco, $bairro, $cidade, $estado, $bio, $caminho_imagem)) {
                     echo '<div id="msg-sucesso">Cadastrado com Sucesso! Acesse para entrar!</div>';
                 } else {
@@ -67,40 +79,46 @@ if(isset($_POST['cadastrar'])) {
 <head>
     <meta charset="utf-8">
     <title>Teste Sync</title>
+    <!-- Estilos -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- Ícones -->
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/icon/favicon-16x16.png">
     <link rel="manifest" href="imagens/icon/site.webmanifest">
     <link rel="mask-icon" href="imagens/icon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="mask-icon" href="imagens/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- Ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <!-- Scripts jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script>
+        // Máscara para data
         $(document).ready(function(){
             $('#data').mask('00/00/0000');
         });
     </script>
      <script>
+        // Atualiza o nome do arquivo selecionado no input file
         function updateFileName(input) {
-    var span = document.getElementById('file-name');
-    if (input.files.length > 0) {
-        span.textContent = input.files[0].name;
-    } else {
-        span.textContent = 'Nenhum arquivo selecionado';
-    }
-}
-
+            var span = document.getElementById('file-name');
+            if (input.files.length > 0) {
+                span.textContent = input.files[0].name;
+            } else {
+                span.textContent = 'Nenhum arquivo selecionado';
+            }
+        }
     </script>
 </head>
 <body>
-
 <div id="corpo-form-cad">
     <h1 class="title"><i class="fas fa-user-plus"></i> Cadastre-se</h1>
+    <!-- Formulário de cadastro -->
     <form method="POST" enctype="multipart/form-data">
+        <!-- Campos de entrada -->
         <label for="nome" class="labelInput">Nome *</label>
         <input type="text" name="nome" placeholder="Nome Completo" maxlength="30"/>
         <label for="telefone" class="labelInput">Telefone *</label>
@@ -132,12 +150,13 @@ if(isset($_POST['cadastrar'])) {
         <label for="bio" class="labelInput">Foto do perfil</label>
         <label for="imagem" class="custom-file-upload">Escolher Arquivo</label>
         <input type="file" id="imagem" name="imagem" class="input-file" accept="image/*" onchange="updateFileName(this)">
+        <!-- Exibição do nome do arquivo selecionado -->
         <span id="file-name" class="labelInput">Nenhum arquivo selecionado</span>
+        <!-- Botão de envio -->
         <input type="submit" value="GRAVAR" name="cadastrar" maxlength="15"/>
-        
     </form>
+    <!-- Link para sair -->
     <p><a href="sair" class="buttom_cad">SAIR <i class="fa fa-times" aria-hidden="true"></i></a></p>
 </div>
-
 </body>
 </html>

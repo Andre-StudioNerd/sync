@@ -1,6 +1,6 @@
 # Sistema de Login
 
-O projeto em questão, trata-se de um Sistema desenvolvido com PHP Orientado a Objetos com o intuito de práticar todas as tecnologias aprendidas, como PHP, POO, PDO, MySQL e HTML e CSS. 
+O projeto em questão, trata-se de um Sistema desenvolvido com PHP Orientado a Objetos com o intuito de mostrar as tecnologias, como PHP, POO, PDO, MySQL, jAVASCRIPT,  HTML e CSS. 
 
 ## O que o Sistemas faz?
 

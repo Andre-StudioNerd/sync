@@ -123,19 +123,13 @@ if(isset($_POST['atualizar'])) {
         <!-- Campos preenchidos com os dados do usuário -->
         <label for="nome" class="labelInput">Nome *</label>
         <input type="text" name="nome" value="<?php echo $dados_usuario['nome']; ?>" maxlength="30"/>
-
-        <!-- Outros campos preenchidos com os dados do usuário -->
         <label for="telefone" class="labelInput">Telefone *</label>
         <input type="text" name="telefone" value="<?php echo $dados_usuario['telefone']; ?>" maxlength="30"/>
-        
         <label for="email" class="labelInput">E-mail *</label>
         <input type="email" name="email" value="<?php echo $dados_usuario['email']; ?>" maxlength="40"/>
-
         <label for="senha" class="labelInput">Senha *</label>
         <input type="password" name="senha" placeholder="Nova senha" maxlength="15"/>
-
         <input type="password" name="conf_senha" placeholder="Confirmar Senha"/>
-
         <label for="genero" class="labelInput">Gênero</label>
         <select name="genero" id="genero">
             <option value="nao informado" <?php if($dados_usuario['sexo'] == "nao informado") echo "selected"; ?>>Escolha</option>
@@ -143,31 +137,23 @@ if(isset($_POST['atualizar'])) {
             <option value="Feminino" <?php if($dados_usuario['sexo'] == "Feminino") echo "selected"; ?>>Feminino</option>
             <option value="Outro" <?php if($dados_usuario['sexo'] == "Outro") echo "selected"; ?>>Outros</option>
         </select>
-        
         <label for="idade" class="labelInput">Idade</label>
         <input type="text" name="idade" value="<?php echo $dados_usuario['nascimento']; ?>" id="data" placeholder="Data de Nascimento">
-        
         <label for="endereco" class="labelInput">Endereço</label>
         <input type="text" name="endereco" value="<?php echo $dados_usuario['endereco']; ?>" placeholder="Seu endereço" maxlength="160"/>
-        
         <label for="bairro" class="labelInput">Bairro</label>
         <input type="text" name="bairro" value="<?php echo $dados_usuario['bairro']; ?>" placeholder="Seu Bairro" maxlength="100"/>
-        
         <label for="cidade" class="labelInput">Cidade</label>
         <input type="text" name="cidade" value="<?php echo $dados_usuario['cidade']; ?>" placeholder="Sua Cidade" maxlength="60"/>
-        
         <label for="estado" class="labelInput">Estado</label>
         <input type="text" name="estado" value="<?php echo $dados_usuario['estado']; ?>" placeholder="Seu Estado" maxlength="60"/>
-        
         <label for="bio" class="labelInput">Biografia</label>
         <textarea name="bio" placeholder="Descreva sobre Você"><?php echo $dados_usuario['bio']; ?></textarea>
-        
         <label for="bio" class="labelInput">Foto do perfil</label>
         <label for="imagem" class="custom-file-upload">Escolher Arquivo</label>
         <input type="file" id="imagem" name="imagem" class="input-file" accept="image/*" onchange="updateFileName(this)">
         <span id="file-name" class="labelInput">Nenhum arquivo selecionado</span>
 
-        
         <!-- Botão para enviar o formulário -->
         <input type="submit" value="GRAVAR" name="atualizar" maxlength="15"/>
     </form>
@@ -175,6 +161,5 @@ if(isset($_POST['atualizar'])) {
     <!-- Link para sair -->
     <p><a href="sair" class="buttom_cad">SAIR <i class="fa fa-times" aria-hidden="true"></i></a></p>
 </div>
-
 </body>
 </html>

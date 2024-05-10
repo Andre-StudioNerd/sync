@@ -1,20 +1,22 @@
+/* Reset de estilos */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+/* Estilos para o corpo da página */
 body{
     background-color: #10688E;
     color: black;
     font-family: Arial;
-
 }
 
+/* Estilos para a div com id "cortes" */
 div#cortes{
     margin: 50px auto 50px auto;
-    width: 90%; /* 90% da largura do contêiner pai */
-    max-width: 800px; /* largura máxima de 420 pixels */
+    width: 90%;
+    max-width: 800px;
     padding: 20px;
     border: 8px solid #fff;
     border-radius: 8px;
@@ -22,21 +24,24 @@ div#cortes{
     color:#000;
 }
 
+/* Estilos para links */
 a{
     text-decoration: none;
     color: black;
 }
 
-
+/* Estilos para links ao passar o mouse */
 a:hover{
     text-decoration: underline;
     color: white;
 }
 
+/* Estilos para links não visitados */
 a:link {
     text-decoration: none;
-   }
+}
 
+/* Estilos para a classe .line */
 .line{
     margin: 10px;
     background-color: transparent;
@@ -45,13 +50,13 @@ a:link {
     border-radius: 2px;
 }
 
+/* Estilos para a classe .photo */
 .photo{
-    
     text-align: center;
     margin: 30px;
-   
 }
 
+/* Estilos para a classe .image_sync */
 .image_sync{
     width: 50%;
     height: auto;
@@ -59,10 +64,12 @@ a:link {
     text-align: center;
 }
 
+/* Estilos para a classe .centralize */
 .centralize{
     text-align: center!important;
 }
 
+/* Estilos para o botão com a classe .buttom_class */
 .buttom_class{
     background-color: rgb(14, 102, 153);
     cursor: pointer;
@@ -74,15 +81,14 @@ a:link {
     height: 40px;
     width: 100%;
     margin-top: 15px;
-    font-size: 10pt;
     text-align: center;
     display: block;
     padding-top:12px;
     padding-bottom: 5px; 
     margin-bottom: 0px;
-    
 }
 
+/* Estilos para o botão ao passar o mouse */
 .buttom_class:hover{
     background-color: #13b5f1;
     cursor: pointer;
@@ -93,7 +99,6 @@ a:link {
     border: none;
     height: 40px;
     width: 100%;
-    font-size: 10pt;
     text-align: center;
     display: block;
     padding-top:12px;
@@ -101,28 +106,33 @@ a:link {
     margin-bottom: 0px;
 }
 
+/* Estilos para links dentro do botão ao passar o mouse */
 .buttom_class a:hover{
     color: #000!important;
 }
 
+/* Estilos para a classe .image_profile */
 .image_profile{
     width: 60%;
     height: auto;
     max-width: 360px;
-    
 }
 
+/* Estilos para a classe .dados-usuario */
 .dados-usuario{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+/* Estilos para a classe .title */
 .title{
     background-color: rgb(14, 102, 153);
     color: #fff;
     padding: 10px 20px;
     text-align: center!important;
 }
+
+/* Estilos para telas menores que 768px */
 @media only screen and (max-width: 768px) {
     #cortes {
         width: 95%;
@@ -133,6 +143,7 @@ a:link {
     }
 }
 
+/* Estilos para telas menores que 480px */
 @media only screen and (max-width: 480px) {
     #cortes {
         width: 100%;

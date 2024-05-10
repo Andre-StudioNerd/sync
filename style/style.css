@@ -1,29 +1,29 @@
+/* Reset de estilos para todos os elementos */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+/* Estilos para o placeholder */
 ::placeholder {
     color: #000!important;
     opacity: 1; /* Firefox */
-  }
-  
-  ::-ms-input-placeholder { /* Edge 12 -18 */
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
     color: #000;
-  }
+}
 
-
-
+/* Estilos para o corpo da página */
 body{
     background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
     background-size: cover;
     color: #000!important;
     font-family: Arial;
     margin-bottom: 100px;
-
 }
 
+/* Estilos para inputs */
 input{
     display: block;
     height: 40px;
@@ -31,18 +31,18 @@ input{
     border-radius: 10px;
     border: none;
     font-size: 10pt;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     color: #000!important;
     outline: none;
     width: calc(100% - 0px); /* Largura do input - padding */
-    padding: 10px;
     margin: 0 auto; /* Centraliza o input horizontalmente */
     margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-
 }
+
+/* Estilos para labels */
 label{
     display: block;
     margin: 0px;
@@ -56,9 +56,9 @@ label{
     margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-
 }
 
+/* Estilos para selects */
 select{
     display: block;
     height: 40px;
@@ -67,25 +67,21 @@ select{
     border-radius: 10px;
     border: none;
     font-size: 10pt;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     color: #000;
     outline: none;
-    padding: 10px;
-    margin: 0 auto; /* Centraliza o input horizontalmente */
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-
 }
 select option {
-    /* Define a cor de fundo do dropdown */
     background-color: #fff;
-    /* Define a cor do texto no dropdown */
     color: #000;
     font-size: 14pt;
-  }
+}
 
+/* Estilos para textarea */
 textarea {
     display: block;
     height: 200px;
@@ -94,30 +90,29 @@ textarea {
     border-radius: 30px;
     border: none;
     font-size: 10pt;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     color: #000!important;
     outline: none;
-    padding: 10px;
-    margin: 0 auto; /* Centraliza o input horizontalmente */
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+/* Estilos para a div com ID "corpo-form" */
 div#corpo-form{
-    width: 90%; /* 90% da largura do contêiner pai */
-    max-width: 360px; /* largura máxima de 420 pixels */
+    width: 90%;
+    max-width: 360px;
     margin: 150px auto 0;
     padding: 20px;
     border: 4px solid #fff;
     border-radius: 8px;
-    
 }
 
+/* Estilos para a div com ID "corpo-form-cad" */
 div#corpo-form-cad{
-    width: 90%; /* 90% da largura do contêiner pai */
-    max-width: 600px; /* largura máxima de 420 pixels */
+    width: 90%;
+    max-width: 600px;
     margin: 50px auto 0;
     padding: 20px;
     border: 8px solid #fff;
@@ -125,11 +120,13 @@ div#corpo-form-cad{
     background-color: #ccc;
 }
 
+/* Estilos para títulos dentro das divs */
 div#corpo-form h1, div#corpo-form h2, div#corpo-form-cad h1{
     text-align: center;
     padding: 20px;
 }
 
+/* Estilos para links */
 a{
     color: white;
     text-decoration: none;
@@ -137,14 +134,12 @@ a{
     display: block;
 }
 
+/* Estilos para links ao passar o mouse */
 a:hover{
     text-decoration: underline;
 }
 
-a:link {
-    text-decoration: none;
-   }
-
+/* Estilos para inputs do tipo submit */
 input[type=submit]{
     margin-top: 30px;
     background-color: rgb(14, 102, 153);
@@ -155,9 +150,9 @@ input[type=submit]{
     font-weight: bold;
     border-radius: 10px;
     border: none;
-    
 }
 
+/* Estilos para inputs do tipo submit ao passar o mouse */
 input[type=submit]:hover{
     margin-top: 30px;
     background-color: #13b5f1;
@@ -166,22 +161,23 @@ input[type=submit]:hover{
     font-weight: bold;
     border-radius: 10px;
     border: none;
-    
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+/* Placeholder para Webkit, Firefox, IE e Firefox */
+::-webkit-input-placeholder {
     color: #000;
 }
-::-moz-placeholder { /* Firefox 19+ */
+::-moz-placeholder {
     color: #000;
 }
-:-ms-input-placeholder { /* IE 10+ */
+:-ms-input-placeholder {
     color: #000;
 }
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
     color: #000;
 }
 
+/* Estilos para o rodapé */
 footer{
     background-color: #333;
     color: #fff;
@@ -193,13 +189,14 @@ footer{
     border-top: #000 solid 8px;
 }
 
+/* Estilos para o botão de cadastro */
 .buttom_cad{
     background-color: rgb(14, 102, 153);
     cursor: pointer;
     transition: 0.3s;
     color: #fff!important;
     font-weight: bold;
-    margin-top: 10px;;
+    margin-top: 10px;
     height: 40px;
     width: 100%;
     border-radius: 10px;
@@ -208,11 +205,11 @@ footer{
     text-align: center;
     display: block;
     padding-top:12px;
-    padding-bottom: 0px; 
+    padding-bottom: 0px;
     margin-bottom: 0px;
-    
 }
 
+/* Estilos para o botão de cadastro ao passar o mouse */
 .buttom_cad:hover{
     background-color: #13b5f1;
     cursor: pointer;
@@ -228,83 +225,84 @@ footer{
     text-align: center;
     display: block;
     padding-top:12px;
-    padding-bottom: 0px; 
+    padding-bottom: 0px;
     margin-bottom: 0px;
-    
 }
 
+/* Estilos para links dentro da classe .buttom_class ao passar o mouse */
 .buttom_class a:hover{
-    
     color: #000!important;
-    
-    
 }
 
-
+/* Estilos para a div com ID "msg-sucesso" */
 div#msg-sucesso{
     width: 400px;
     margin: 10px auto;
     padding: 10px;
     background-color: rgba(50, 205, 50, .3);
     border: 1px solid rgb(34, 139, 34);
-
 }
 
+/* Estilos para a div com classe .msg-erro */
 div.msg-erro{
     width: 400px;
     margin: 10px auto;
     padding: 10px;
     background-color: rgba(250, 128, 114, .3);
     border: 1px solid rgb(165, 42, 42);
-
 }
 
+/* Estilos para o título */
 .title {
     background-color: rgb(14, 102, 153);
     color: #fff;
-   
 }
 
+/* Estilos para o botão de upload personalizado */
 .custom-file-upload {
-    background-color: rgb(14, 102, 153);;
+    background-color: rgb(14, 102, 153);
     color: white!important;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 10px;;
+    margin-top: 10px;
     height: 40px;
     width: 100%;
     border-radius: 10px;
     border: none;
 }
 
+/* Estilos para o input de arquivo */
 .input-file {
     display: none!important;
 }
 
-
+/* Estilos para o botão de upload personalizado ao passar o mouse */
 .custom-file-upload:hover {
     background-color: #0056b3;
 }
+
+/* Estilos para a classe .exit */
 .exit{
     color: #000;
 }
+
+/* Media query para dispositivos com largura máxima de 768px */
 @media only screen and (max-width: 768px) {
     #cortes {
         width: 95%;
     }
-
     .buttom_class {
         font-size: 14pt;
     }
 }
 
+/* Media query para dispositivos com largura máxima de 480px */
 @media only screen and (max-width: 480px) {
     #cortes {
         width: 100%;
     }
-
     .buttom_class {
         font-size: 12pt;
     }
